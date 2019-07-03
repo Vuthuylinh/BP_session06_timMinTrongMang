@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>findMin</title>
+</head>
+<body>
+<script>
+    function findMinArr(Arr){
+        if(Arr.length === 0){
+            return -1;
+        }
+        let arrIndex;
+        let min = Arr[0];
+        for(let i=0; i<Arr.length;i++){
+            if(min > [i]){
+                min = Arr[i];
+                arrIndex =i;
+            }
+
+        }
+        return arrIndex;
+    }
+let arr1=[1,2,3,4,5];
+    let minindex =findMinArr(arr1);
+    document.write("Mang da nhap la: " + arr1 + "<br>")
+    document.write("Vi tri phan tu nho nhat trong mang la: " +minindex +"<br>");
+    document.write("Gia tri nho nhat trong mang la:" + arr1[minindex]);
+
+
+</script>
+</body>
+</html>
